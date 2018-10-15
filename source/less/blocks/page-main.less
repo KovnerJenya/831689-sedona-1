@@ -1,0 +1,43 @@
+.greeting-image {
+  position: relative;
+  background-image: url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-color: #2e4145;
+  background-size: 80%, cover;
+  background-repeat: no-repeat;
+  background-position-y: center, center;
+  background-position-x: center, center;
+  min-height: 790px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 320px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+
+}
+.gallery-greeting {
+  position: relative;
+  background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-size: 80%, cover;
+  background-repeat: no-repeat;
+  background-position-y: center, center;
+  background-position-x: center, center;
+  min-height: 500px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 320px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+
+}
