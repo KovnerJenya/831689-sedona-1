@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <title>Главная</title>
   </head>
@@ -30,13 +31,13 @@
     </header>
     <main class="page-main">
       <section class="reviews">
-        <h1 class="reviews__title page-title">Оставьте свой отзыв</h1>
+        <h1 class="reviews-form__title page-title">Оставьте свой отзыв</h1>
         <p class="reviews__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
         <form class="reviews__form reviews-form" action="http://echo.htmlacademy.ru" method="post">
           <fieldset class="reviews-form__group reviews-form__group--info">
-            <legend class="reviews-form__title">Представьтесь</legend>
+            <legend class="reviews-form__title">Представьтесь:</legend>
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-name">Имя*:</label>
@@ -53,7 +54,7 @@
             </ul>
           </fieldset>
           <fieldset class="reviews-form__group reviews-form__group--contacts">
-            <legend class="reviews-form__title">Контактная информация</legend>
+            <legend class="reviews-form__title">Контактная информация:</legend>
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-phone">Контактный телефон*:</label>
@@ -70,15 +71,15 @@
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="positive" checked>
-                <label class="reviews-form__label" for="positive">Скорее положительное</label>
+                <label class="reviews-form__label-radio" for="positive">Скорее положительное</label>
               </li>
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="negative">
-                <label class="reviews-form__label" for="negative">Скорее отрицательное</label>
+                <label class="reviews-form__label-radio" for="negative">Скорее отрицательное</label>
               </li>
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="undefined">
-                <label class="reviews-form__label" for="undefined">Затрудняюсь ответить</label>
+                <label class="reviews-form__label-radio" for="undefined">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -105,7 +106,7 @@
           </fieldset>
           <fieldset class="reviews-form__group reviews-form__group--textarea">
             <legend class="reviews-form__title">Опишите свои эмоции:</legend>
-            <textarea class="reviews-form__textarea" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="reviews-form__textarea" style="width:279px; height:160px;" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="reviews-form__button button" type="submit">Отправить отзыв</button>
         </form>
