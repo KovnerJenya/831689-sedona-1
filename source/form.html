@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Форма отзывов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Главная</title>
   </head>
   <body>
     <header class="page-header">
@@ -11,7 +13,6 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -26,18 +27,18 @@
               <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
     <main class="page-main">
+      <div class="form-greeting"></div>
       <section class="reviews">
-        <h1 class="reviews__title page-title">Оставьте свой отзыв</h1>
-        <p class="reviews__description page__description">
+        <h1 class="reviews-form__title page-title">Оставьте свой отзыв</h1>
+        <p class="reviews__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
         <form class="reviews__form reviews-form" action="http://echo.htmlacademy.ru" method="post">
-          <fieldset class="reviews-form__group">
-            <legend class="reviews-form__title">Представьтесь</legend>
+          <fieldset class="reviews-form__group reviews-form__group--info">
+            <legend class="reviews-form__title">Представьтесь:</legend>
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-name">Имя*:</label>
@@ -46,7 +47,7 @@
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-surname">Фамилия*:</label>
                 <input class="reviews-form__input" id="user-surname" type="text" name="usersurname" placeholder="Иванов">
-              </li>
+            </li>
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-patronymic">Отчество:</label>
                 <input class="reviews-form__input" id="user-patronymic" type="text" name="userpatronymic" placeholder="Иванов">
@@ -54,7 +55,7 @@
             </ul>
           </fieldset>
           <fieldset class="reviews-form__group reviews-form__group--contacts">
-            <legend class="reviews-form__title">Контактная информация</legend>
+            <legend class="reviews-form__title">Контактная информация:</legend>
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <label class="reviews-form__label" for="user-phone">Контактный телефон*:</label>
@@ -71,15 +72,15 @@
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="positive" checked>
-                <label class="reviews-form__label" for="positive">Скорее положительное</label>
+                <label class="reviews-form__label-radio" for="positive">Скорее положительное</label>
               </li>
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="negative">
-                <label class="reviews-form__label" for="negative">Скорее отрицательное</label>
+                <label class="reviews-form__label-radio" for="negative">Скорее отрицательное</label>
               </li>
               <li class="reviews-form__item">
                 <input class="reviews-form__input-radio" type="radio" name="impression" id="undefined">
-                <label class="reviews-form__label" for="undefined">Затрудняюсь ответить</label>
+                <label class="reviews-form__label-radio" for="undefined">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -104,10 +105,10 @@
               </li>
             </ul>
           </fieldset>
-          <div class="reviews-form__group reviews-form__group--textarea">
+          <fieldset class="reviews-form__group reviews-form__group--textarea">
             <legend class="reviews-form__title">Опишите свои эмоции:</legend>
-            <textarea class="reviews-form__textarea" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
+            <textarea class="reviews-form__textarea" style="width:279px; height:160px;" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
           <button class="reviews-form__button button" type="submit">Отправить отзыв</button>
         </form>
       </section>
@@ -117,13 +118,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__item--twitter" href="#" aria-label="Ссылка на наш Twitter"></a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Ссылка на наш Twitter">Twitter</a>
           </li>
           <li class="social__item">
-            <a class="social__item--facebook" href="#" aria-label="Ссылка на наш Facebook"></a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Ссылка на наш Facebook">Facebook</a>
           </li>
           <li class="social__item">
-            <a class="social__item--youtube" href="#" aria-label="Ссылка на наш Youtube"></a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Ссылка на наш Youtube">Youtube</a>
           </li>
         </ul>
       </div>
