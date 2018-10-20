@@ -22,3 +22,45 @@
   padding: 10px 0 10px 0;
   border-bottom: 1px solid #678fa8;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav {
+    background: #ffffff;
+  }
+
+  .main-nav__item {
+    padding: 15px 0 15px 0;
+    border-style: none;
+    width: 20%;
+
+  }
+
+  .main-nav__link {
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .main-nav__list li:nth-child(2) {
+    padding-right: 104px;
+  }
+  .main-nav__list li:nth-child(3) {
+    padding-left: 104px;
+  }
+
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -44px;
+  }
+}

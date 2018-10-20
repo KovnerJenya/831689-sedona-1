@@ -20,6 +20,13 @@
   text-transform: uppercase;
 }
 
+.reviews-form__page-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .reviews__description {
   font-size: 14px;
   line-height: 24px;
@@ -71,4 +78,48 @@
   height: 58px;
   padding: 0;
   margin-top: 24px;
+}
+
+
+@media (min-width: @tablet-width) {
+
+ .reviews {
+   padding: 65px 60px 65px 60px;
+ }
+
+ .reviews-form__page-title {
+   font-size: 30px;
+   line-height: 26px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin: 0 0 45px 0;
+ }
+
+ .reviews__description {
+   border-style: none;
+   margin: 0 0 85px 0;
+ }
+
+ .reviews__form {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .reviews-form__title {
+   font-size: 21px;
+ }
+
+ .reviews-form__group {
+   margin: 0;
+   padding: 0;
+ }
+
+ .reviews-form__group--impression {
+   order: -1;
+ }
+
+ .reviews-form__list {
+   margin: 0;
+   padding: 0;
+ }
 }

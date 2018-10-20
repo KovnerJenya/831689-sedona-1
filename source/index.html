@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип сайта">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -24,7 +24,7 @@
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
             </li>
           </ul>
       </nav>
@@ -34,44 +34,48 @@
       <div class="greeting-image"></div>
       <section class="greeting">
         <b class="greeting__text">
-          Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!
+          Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
         </b>
         <p class="greeting__reasons">
-          Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </section>
       <section class="reasons">
+        <div class="reasons-item reasons-main__city">
+        <div class="reasons__content">
+          <h2 class="reasons__title">Настоящий городок</h2>
+          <p class="reasons__number">-№1-</p>
+          <p class="reasons__description">Cедона не аттракцион для туристов,<br> там течет своя жизнь</p>
+        </div>
+        <div class="reasons__item--image">
+          <img class="reasons-picture" src="img/main-city-mobile@1x.jpg" width="100%" alt="Фотография города">
+        </div>
+        </div>
         <h2 class="visually-hidden">Причины</h2>
         <ul class="reasons__list">
-          <li class="reasons__item reasons-main__city">
-            <h2 class="reasons__title">Настоящий городок</h2>
-            <p class="reasons__number">-№1-</p>
-            <p class="reasons__description">Cедона не аттракцион для туристов,<br> там течет своя жизнь</p>
-          </li>
-          <div class="reasons__item--image">
-            <img class="reasons-picture" src="img/main-city-mobile@1x.jpg" width="100%" alt="Фотография города">
-          </div>
           <li class="reasons__addit reasons__addit--house">
-            <h2 class="reasons__title">Жилье</h2>
-            <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="reasons__addit reasons__addit--souvenirs">
-            <h2 class="reasons__title">Сувениры</h2>
-            <p class="reasons__description">Не только китайского, но и местного производства!</p>
+            <h2 class="reasons__title--addit">Жилье</h2>
+            <p class="reasons__description--addit">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="reasons__addit reasons__addit--food">
-            <h2 class="reasons__title">Еда</h2>
-            <p class="reasons__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <h2 class="reasons__title--addit">Еда</h2>
+            <p class="reasons__description--addit">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
-          <li class="reasons__item reasons-main__canyon">
-            <h2 class="reasons__title">Там есть мост дьявола</h2>
-            <p class="reasons__number">-№2-</p>
-            <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <li class="reasons__addit reasons__addit--souvenirs">
+            <h2 class="reasons__title--addit">Сувениры</h2>
+            <p class="reasons__description--addit">Не только китайского, но и местного производства!</p>
           </li>
+        </ul>
+        <div class="reasons-item reasons-main__canyon">
           <div class="reasons__item--image">
             <img class="reasons-picture" src="img/main-bridge-mobile@1x.jpg" width="100%" alt="Фотография каньона">
           </div>
-        </ul>
+        <div class="reasons__content">
+          <h2 class="reasons__title">Там есть мост дьявола</h2>
+          <p class="reasons__number">-№2-</p>
+          <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+      </div>
         <ul class="reasons__info">
           <li class="reasons__item reasons__item--info">
             <h2 class="reasons__title">Небольшая площадь</h2>
@@ -92,7 +96,7 @@
       </section>
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__description">Укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br> предложения гостиниц в седоне</p>
+        <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="search__button" type="submit">Найти гостиницу</button>
       </section>
       <section class="map">
