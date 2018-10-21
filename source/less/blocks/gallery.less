@@ -100,5 +100,29 @@
   .gallery__item--1 {
     flex-grow: 1;
     width: 400px;
+
+    & .gallery__image {
+      height: 400px;
+    }
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item {
+    width: 33.33%;
+
+    &--1 {
+      width: 1200px;
+    }
+  }
+
+ .gallery__image {
+   height: 267px;
+ }
+
+ .video-image {
+   width: 800px;
+   height: 500px;
+   margin: auto;
  }
 }

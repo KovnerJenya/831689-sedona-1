@@ -81,10 +81,12 @@
   .reasons__content {
     width: 33%;
     text-align: center;
+    padding: 50px 40px 50px 40px;
   }
 
   .reasons__item--image {
     width: 67%;
+    flex-shrink: 0;
   }
 
   .reasons__list {
@@ -128,7 +130,6 @@
   width: 33%;
 }
 
-
  .reasons__title {
    padding: 0;
  }
@@ -136,4 +137,11 @@
  .reasons__description {
    padding: 0;
  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reasons__title {
+    padding: 0 80px;
+  }
 }
