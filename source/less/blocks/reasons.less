@@ -2,33 +2,41 @@
   list-style: none;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 40px 0 25px 0;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
 
-.reasons-main__city {
+.reasons__content {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0 25px 0;
   background-color: #81b3d2;
   color: #ffffff;
-  min-height: 210px;
 }
 
-.reasons-main__canyon {
-  background-color: #81b3d2;
-  color: #ffffff;
-  min-height: 190px;
+.reasons__item--image {
+  display: flex;
 }
 
 .reasons__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.reasons__title--addit {
+  font-size: 18px;
 }
 
 .reasons__description {
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding: 0 0 30px 0;
 }
 
 .reasons__number {
@@ -49,9 +57,91 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 0 20px;
+  padding: 10px 20px 0 20px;
 }
 
 .reasons__item--info {
   border-bottom: 1px solid #000000;
+}
+
+.reasons__info li:nth-child(3) {
+  border-style: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .reasons-main__city {
+    display: flex;
+  }
+
+  .reasons-main__canyon {
+    display: flex;
+  }
+
+  .reasons__content {
+    width: 33%;
+    text-align: center;
+    padding: 50px 40px 50px 40px;
+  }
+
+  .reasons__item--image {
+    width: 67%;
+    flex-shrink: 0;
+  }
+
+  .reasons__list {
+    flex-direction: row;
+  }
+
+  .reasons__title--addit {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0 25px 0;
+  }
+
+  .reasons__description--addit {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0 0 30px 0;
+  }
+
+  .reasons__addit {
+    text-align: center;
+    width: 33%;
+    padding: 0 40px 0 40px;
+  }
+
+  .reasons__info {
+    background-color: #eeeeee;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 50px 15px 50px 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .reasons__item--info {
+    border-style: none;
+    padding: 0 55px 0 55px;
+    width: 33%;
+  }
+
+  .reasons__title {
+    padding: 0;
+  }
+
+  .reasons__description {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reasons__title {
+    padding: 0 80px;
+  }
 }
