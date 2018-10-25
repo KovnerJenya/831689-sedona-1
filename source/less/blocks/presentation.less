@@ -20,6 +20,59 @@
   color: #333333;
 }
 
+.video__controls {
+  padding: 0 20px;
+  position: relative;
+
+  &--range {
+    height: 45px;
+    position: absolute;
+    width: 280px;
+    top: -45px;
+    background-color: rgba(0, 0, 0, 0.6);
+   }
+
+  &--option {
+  height: 66px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+ }
+}
+
+.control-buttons {
+  &:active {
+    fill: #333333;
+
+    &:hover {
+      fill: #b8b8b8;
+    }
+  }
+}
+
+.scale {
+  width: 235px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 20px;
+  top: 21px;
+}
+
+.bar {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  left: 60px;
+}
+
+.option-subtitles {
+  margin-left: auto;
+}
 
 @media (min-width: @tablet-width) {
   .presentation {

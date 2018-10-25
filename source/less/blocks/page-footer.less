@@ -1,7 +1,7 @@
 .page-footer {
   text-transform: uppercase;
   text-align: center;
-  padding: 50px 0 50px 0;
+  padding: 40px 0 23px 0;
 }
 
 .page-footer__hashtag {
@@ -16,19 +16,49 @@
 .social__list {
   list-style: none;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .copyright__text {
+  align-items: center;
   list-style: none;
   text-decoration: none;
   color: #000000;
   font-size: 14px;
+  display: flex;
   line-height: 26px;
+  margin: auto;
+
+  & svg {
+    margin-left: 11px;
+  }
 }
 
-.social__item {
-  padding: 0 10px 0 10px;
+.copyright {
+  display: flex;
 }
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  margin: 3px;
+  width: 47px;
+  height: 47px;
+
+   &:hover {
+     background-color: #669ec0;
+
+  &:active {
+      background-color: #5496bd;
+    }
+  }
+}
+
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
