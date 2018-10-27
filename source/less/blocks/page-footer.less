@@ -33,6 +33,14 @@
 
   & svg {
     margin-left: 11px;
+
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: rgba(0, 0, 0, 0.6);
+    }
   }
 }
 
@@ -40,7 +48,7 @@
   display: flex;
 }
 
-.social__link {
+.social__item--link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,12 +56,15 @@
   margin: 3px;
   width: 47px;
   height: 47px;
+  fill: #ffffff;
+
 
    &:hover {
      background-color: #669ec0;
 
   &:active {
       background-color: #5496bd;
+      fill: #88b6d1;
     }
   }
 }

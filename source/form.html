@@ -50,15 +50,15 @@
           <fieldset class="reviews-form__group reviews-form__group--info">
             <legend class="reviews-form__title reviews-form__title--info">Представьтесь:</legend>
             <ul class="reviews-form__list reviews-form__list--info">
-              <li class="reviews-form__item">
+              <li class="reviews-form__item reviews-form__item--info">
                 <label class="reviews-form__label" for="user-name">Имя*:</label>
                 <input class="reviews-form__input" id="user-name" type="text" name="username" placeholder="Петр">
               </li>
-              <li class="reviews-form__item">
+              <li class="reviews-form__item reviews-form__item--info">
                 <label class="reviews-form__label" for="user-surname">Фамилия*:</label>
                 <input class="reviews-form__input" id="user-surname" type="text" name="usersurname" placeholder="Иванов">
             </li>
-              <li class="reviews-form__item">
+              <li class="reviews-form__item reviews-form__item--info">
                 <label class="reviews-form__label" for="user-patronymic">Отчество:</label>
                 <input class="reviews-form__input" id="user-patronymic" type="text" name="userpatronymic" placeholder="Иванов">
               </li>
@@ -70,10 +70,16 @@
               <li class="reviews-form__item reviews-form__item--contacts">
                 <label class="reviews-form__label" for="user-phone">Контактный телефон*:</label>
                 <input class="reviews-form__input" id="user-phone" type="tel" name="userphone" placeholder="Введите телефон">
+                <div class="reviews-form__icon">
+                  <img src="img/icon-phone.svg">
+                <div>
               </li>
               <li class="reviews-form__item reviews-form__item--contacts">
                 <label class="reviews-form__label" for="user-email">Электронная почта*:</label>
                 <input class="reviews-form__input" id="user-email" type="email" name="useremail" placeholder="Введите e-mail">
+                <div class="reviews-form__icon">
+                  <img src="img/icon-mail.svg">
+                <div>
               </li>
             </ul>
           </fieldset>
@@ -81,15 +87,15 @@
             <legend class="reviews-form__title reviews-form__title--impression">Ваше общее впечатление:</legend>
             <ul class="reviews-form__list">
               <li class="reviews-form__item">
-                <input class="reviews-form__input-radio" type="radio" name="impression" id="positive" checked>
+                <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="positive" checked>
                 <label class="reviews-form__label-radio" for="positive">Скорее положительное</label>
               </li>
               <li class="reviews-form__item">
-                <input class="reviews-form__input-radio" type="radio" name="impression" id="negative">
+                <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="negative">
                 <label class="reviews-form__label-radio" for="negative">Скорее отрицательное</label>
               </li>
               <li class="reviews-form__item">
-                <input class="reviews-form__input-radio" type="radio" name="impression" id="undefined">
+                <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="undefined">
                 <label class="reviews-form__label-radio" for="undefined">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -98,19 +104,19 @@
             <legend class="reviews-form__title reviews-form__title--landmarks">Посещенные достопримечательности:</legend>
             <ul class="reviews-form__list reviews-form__list--landmarks">
               <li class="reviews-form__item reviews-form__item--landmarks">
-                <input class="reviews-form__input-checkbox" type="checkbox" name="landmarks" id="bridge" checked>
+                <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="bridge" checked>
                 <label class="reviews-form__label-checkbox" for="bridge">Мост Дьявола</label>
               </li>
               <li class="reviews-form__item reviews-form__item--landmarks">
-                <input class="reviews-form__input-checkbox" type="checkbox" name="landmarks" id="mountain" checked>
+                <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="mountain" checked>
                 <label class="reviews-form__label-checkbox" for="mountain">Гора-Колокол</label>
               </li>
               <li class="reviews-form__item reviews-form__item--landmarks">
-                <input class="reviews-form__input-checkbox" type="checkbox" name="landmarks" id="park" checked>
-                <label class="reviews-form__label-checkbox" for="park">Слайд-парк</label>
+                <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="park" checked>
+                <label class="reviews-form__label-checkbox " for="park">Слайд-парк</label>
               </li>
               <li class="reviews-form__item reviews-form__item--landmarks">
-                <input class="reviews-form__input-checkbox" type="checkbox" name="landmarks" id="rocks">
+                <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="rocks">
                 <label class="reviews-form__label-checkbox" for="rocks">Красные скалы</label>
               </li>
             </ul>
@@ -119,7 +125,7 @@
             <legend class="reviews-form__title reviews-form__title--textarea">Опишите свои эмоции:</legend>
             <textarea class="reviews-form__textarea" style="" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="reviews-form__button button" type="submit">Отправить отзыв</button>
+          <button class="reviews-form__button blue-button" type="submit">Отправить отзыв</button>
           <p class="reviews-form__required">* — обязательные поля</p>
         </form>
       </section>
@@ -129,15 +135,15 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Ссылка на наш Twitter"><svg class="social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" fill="#ffffff" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve"><g id="W6EeEF_1_"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/></g></g></svg>
+            <a class="social__link social__item--link" href="#" aria-label="Ссылка на наш Twitter"><svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"  viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve"><g id="W6EeEF_1_"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/></g></g></svg>
 </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Ссылка на наш Facebook"><svg class="social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" fill="#ffffff" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve"><path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/></svg>
+            <a class="social__item social__item--link" href="#" aria-label="Ссылка на наш Facebook"><svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"  viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve"><path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/></svg>
 </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Ссылка на наш Youtube"><svg class="social-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" fill="#ffffff" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve"><path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/></svg>
+            <a class="social__link social__item--link" href="#" aria-label="Ссылка на наш Youtube"><svg  version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"  viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve"><path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/></svg>
 </a>
           </li>
         </ul>

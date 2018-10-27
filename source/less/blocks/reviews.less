@@ -10,11 +10,13 @@
   border-style: none;
   border-bottom: 1px solid #e5e5e5;
   margin: 25px 0 25px 0;
+  padding: 0 20px;
 }
 
 .reviews-form__list {
   list-style: none;
   text-align: start;
+  padding: 0;
 }
 
 .reviews-form__title {
@@ -29,6 +31,7 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 30px 0 30px 0;
 }
 
 .reviews__description {
@@ -37,6 +40,7 @@
   text-transform: uppercase;
   color: #333333;
   border-bottom: 1px solid #e5e5e5;
+  padding:  0 0 30px 0;
 }
 
 .reviews-form__label {
@@ -48,18 +52,90 @@
 
 .reviews-form__input {
   font-weight: bold;
+  border: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
 }
+
+
 
 .reviews-form__label-checkbox {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  position: relative;
+  margin-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -60px;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+}
+
+.reviews-form__input-checkbox:checked + .reviews-form__label-checkbox::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -60px;
+  background-image: url('../img/icon-tick.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews-form__label-radio {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  position: relative;
+  margin-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -60px;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+}
+
+.reviews-form__input-radio:checked + .reviews-form__label-radio::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -60px;
+  width: 20px;
+  height: 20px;
+  border: 13px solid #f2f2f2;
+  background-color: #000000;
+
+  &:checked:hover {
+    border: 13px solid #000000;
+    background-color: #ffffff;
+  }
 }
 
 .reviews-form__group--textarea {
@@ -68,6 +144,48 @@
 
 .reviews-form__item {
   padding: 15px 0 15px 0;
+
+  &--info {
+    display: flex;
+    align-items: center;
+
+    & input {
+      border: 1px solid transparent;
+      background-color: #f2f2f2;
+      padding: 16px;
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+}
+
+.reviews-form__item--contacts {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  & label {
+    margin-left: 21px;
+  }
+
+  & input {
+    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    padding: 16px;
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.reviews-form__icon {
+  width: 47px;
+  display: flex;
+  height: 47px;
+  background-color: #e6e6e6;
+  position: absolute;
+  right: 0;
+  top: 41px;
+  justify-content: center;
 }
 
 .reviews-form__button {
@@ -84,9 +202,15 @@
 }
 
 .reviews-form__textarea {
-  height: 160px;
-  width: 280px;
+  min-height: 160px;
+  width: 100%;
   margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  border: none;
 }
 
 
