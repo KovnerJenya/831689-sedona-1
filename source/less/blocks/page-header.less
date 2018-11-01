@@ -55,7 +55,6 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
@@ -65,7 +64,6 @@
 
 @media (max-width: @mobile-width-only) {
   .main-nav__item {
-
     &:hover {
       background-color: #669ec0;
     }
@@ -75,11 +73,13 @@
     }
   }
 
-.main-nav__link {
-  &:active {
-    color: #94b9d2;
+  .main-nav__link {
+    color: #ffffff;
+
+    &:active {
+      color: #94b9d2;
+    }
   }
- }
 }
 
 
@@ -89,7 +89,7 @@
     background: #ffffff;
   }
 
-  .page-header{
+  .page-header {
     height: 0;
 
     &__logo {
@@ -114,6 +114,10 @@
     line-height: 26px;
     padding: 0;
 
+    &--active {
+      color: #766357;
+    }
+
     &:hover {
       color: #81b3d2;
     }
@@ -132,7 +136,7 @@
   }
 }
 
-@media (min-width: @desktop-width){
+@media (min-width: @desktop-width) {
   .main-nav {
     width: 1200px;
   }
@@ -141,12 +145,11 @@
     padding: 0;
   }
 
-  .page-header{
+  .page-header {
     height: 0;
 
     &__logo {
       top: -56px;
     }
   }
-
 }

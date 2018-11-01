@@ -1,10 +1,11 @@
 .blue-button {
   &:hover {
-  background-color: #669ec0;
+    background-color: #669ec0;
   }
+
   &:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -12,4 +13,12 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

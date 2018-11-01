@@ -25,11 +25,11 @@
 }
 
 .greeting__triangle {
-    position: absolute;
-    bottom: -36px;
-    left: 0;
-    fill: #ffffff;
-  }
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  fill: #ffffff;
+}
 
 @media (min-width: @tablet-width) {
   .greeting {
@@ -39,7 +39,7 @@
   }
 
   .greeting__text {
-   display: block;
+    display: block;
   }
 
   .greeting__reasons {
@@ -49,8 +49,19 @@
     text-transform: uppercase;
     margin: 30px 0 0 0;
   }
+
+  .greeting__triangle {
+    display: none;
+  }
 }
 
-.greeting__triangle {
-  display: none;
+
+@media (min-width: @desktop-width) {
+  .greeting {
+    padding: 50px 0 30px 0;
+  }
+
+  .greeting__text {
+    font-size: 21px;
+  }
 }

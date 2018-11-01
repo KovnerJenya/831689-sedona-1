@@ -72,6 +72,7 @@
 
   .gallery__description {
     border-style: none;
+    padding: 0 25px 55px 25px;
   }
 
   .gallery__item {
@@ -113,7 +114,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .gallery {
+    padding: 0;
+  }
+
   .gallery__item {
+    position: relative;
     width: 33.33%;
 
     &--1 {
@@ -123,5 +129,35 @@
 
   .gallery__image {
     height: 267px;
+  }
+
+  .gallery__content {
+    padding: 16px 0 16px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .gallery__info {
+    padding-left: 20px;
+  }
+
+  .gallery__name {
+    color: #ffffff;
+  }
+
+  .gallery__author {
+    color: #ffffff;
+  }
+
+  .gallery__button {
+    padding-right: 20px;
+    color: #ffffff;
+
+    & svg {
+      vertical-align: sub;
+      fill: #ffffff;
+    }
   }
 }
