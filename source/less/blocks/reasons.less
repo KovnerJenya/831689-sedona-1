@@ -2,7 +2,7 @@
   list-style: none;
   text-align: center;
   margin: 0;
-  padding: 40px 0 25px 0;
+  padding: 25px 0 30px 0;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -11,32 +11,51 @@
 .reasons__content {
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 20px 0;
   background-color: #81b3d2;
   color: #ffffff;
+
+  &--city {
+    padding: 55px 0 20px 0;
+  }
 }
 
 .reasons__item--image {
   display: flex;
 }
 
+.reasons-main__canyon {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.br {
+  display: none;
+}
+
 .reasons__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  margin: 0;
-  padding: 20px 0 0 0;
-}
 
-.reasons__title--addit {
-  font-size: 18px;
+  &--addit {
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .reasons__description {
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 15px;
+
+  &--addit {
+    padding: 0 20px 0 69px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .reasons__number {
@@ -46,7 +65,10 @@
 
 .reasons__addit {
   text-align: left;
-  padding: 0 40px 0 70px;
+
+  &--food {
+    order: 2;
+  }
 }
 
 .reasons__info {
@@ -57,31 +79,52 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 10px 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 .reasons__item--info {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
 .reasons__info li:nth-child(3) {
   border-style: none;
 }
 
+.reasons__icon {
+  fill: #81b3d2;
+  width: 39px;
+  height: 37px;
+  margin: 0 10px 0 20px;
+}
+
 
 @media (min-width: @tablet-width) {
-  .reasons-main__city {
+  .reasons {
+    margin-top: 20px;
+  }
+
+  .reasons-item__city {
     display: flex;
   }
 
   .reasons-main__canyon {
     display: flex;
+    flex-direction: row;
   }
 
   .reasons__content {
     width: 33%;
     text-align: center;
-    padding: 50px 40px 50px 40px;
+    padding: 30px 0 20px 0;
+
+    &--city {
+      padding: 47px 0 40px 0;
+    }
+  }
+
+  .br {
+    display: block;
   }
 
   .reasons__item--image {
@@ -93,25 +136,29 @@
     flex-direction: row;
   }
 
-  .reasons__title--addit {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px 0 25px 0;
-  }
+  .reasons__title {
+    padding: 0 53px 0 53px;
 
-  .reasons__description--addit {
-    font-size: 14px;
-    line-height: 21px;
-    margin: 0;
-    padding: 0 0 30px 0;
+    &--addit {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      margin: 0;
+      padding: 20px 0 25px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .reasons__addit {
     text-align: center;
     width: 33%;
-    padding: 0 40px 0 40px;
+    padding: 0 25px;
+
+    &--food {
+      order: 0;
+    }
   }
 
   .reasons__info {
@@ -119,29 +166,67 @@
     list-style: none;
     text-transform: uppercase;
     margin: 0;
-    padding: 50px 15px 50px 15px;
+    padding: 25px 15px 25px 15px;
     display: flex;
     flex-direction: row;
   }
 
   .reasons__item--info {
     border-style: none;
-    padding: 0 55px 0 55px;
+    padding: 0;
     width: 33%;
   }
 
-  .reasons__title {
-    padding: 0;
+  .reasons__description {
+    padding: 0 42px;
+
+    &--addit {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0 22px 30px 22px;
+    }
   }
 
-  .reasons__description {
-    padding: 0;
+  .reasons__icon {
+    width: 70px;
+    height: 72px;
+    margin-bottom: 25px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .reasons__title {
-    padding: 0 80px;
+    padding: 0 114px;
+    font-size: 21px;
+  }
+
+  .reasons__list {
+    padding: 55px 0 74px;
+  }
+
+  .reasons__addit {
+    padding: 0;
+  }
+
+  .reasons__content {
+    padding: 40px 0 40px 0;
+  }
+
+  .reasons__description {
+    padding: 26px 50px 0 50px;
+  }
+
+  .reasons__icon {
+    margin: 0 0 26px 0;
+  }
+
+  .reasons__description--city {
+    padding: 0 52px;
+  }
+
+  .reasons__description--canyon {
+    padding: 0 83px;
   }
 }

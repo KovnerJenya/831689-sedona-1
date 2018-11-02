@@ -1,6 +1,21 @@
 .main-nav {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   background: #81b3d2;
   text-transform: uppercase;
+}
+
+.page-header {
+  position: relative;
+  height: 56px;
+
+  &__logo {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -44px;
+  }
 }
 
 .main-nav__list {
@@ -10,27 +25,81 @@
   padding: 0;
 }
 
-.main-nav__link {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
+.main-nav__toggle {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  border: none;
+  fill: #ffffff;
+  background-color: transparent;
+}
+
+.main-nav__menu {
+  margin: 0;
+  top: 17px;
+  position: absolute;
+  right: 17px;
+  padding: 0;
+  fill: #81b3d2;
+  border: none;
+  background-color: transparent;
 }
 
 .main-nav__item {
-  padding: 10px 0 10px 0;
+  padding: 7px 0 7px 0;
   border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
 }
 
+.main-nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 20px 93px;
+}
+
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__item {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+  }
+
+  .main-nav__link {
+    color: #ffffff;
+
+    &:active {
+      color: #94b9d2;
+    }
+  }
+}
+
+
 @media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+    background: #ffffff;
+  }
+
+  .page-header {
+    height: 0;
+
+    &__logo {
+      top: -56px;
+    }
+  }
+
   .main-nav__list {
     display: flex;
     justify-content: space-around;
-  }
-
-  .main-nav {
-    background: #ffffff;
   }
 
   .main-nav__item {
@@ -43,24 +112,44 @@
     color: #000000;
     font-size: 14px;
     line-height: 26px;
+    padding: 0;
+
+    &--active {
+      color: #766357;
+    }
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .main-nav__list li:nth-child(2) {
-    padding-right: 104px;
+    padding-right: 90px;
   }
 
   .main-nav__list li:nth-child(3) {
-    padding-left: 104px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
+  .main-nav__link {
+    padding: 0;
   }
 
   .page-header {
-    position: relative;
-  }
+    height: 0;
 
-  .page-header__logo {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    margin-left: -44px;
+    &__logo {
+      top: -56px;
+    }
   }
 }

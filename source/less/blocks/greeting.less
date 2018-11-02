@@ -1,7 +1,8 @@
 .greeting {
   text-align: center;
   display: block;
-  padding: 70px 0 50px 0;
+  padding: 50px 0 10px 0;
+  position: relative;
 }
 
 .greeting__text {
@@ -9,6 +10,9 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 21px;
 }
 
 .greeting__reasons {
@@ -16,15 +20,26 @@
   line-height: 26px;
   color: #333333;
   text-transform: uppercase;
-  margin: 60px 0 0 0;
+  margin: 30px 0 0 0;
+  padding: 0 10px;
 }
 
+.greeting__triangle {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  fill: #ffffff;
+}
 
 @media (min-width: @tablet-width) {
   .greeting {
     text-align: center;
     display: block;
-    padding: 50px 0 53px 0;
+    padding: 50px 0 20px 0;
+  }
+
+  .greeting__text {
+    display: block;
   }
 
   .greeting__reasons {
@@ -33,5 +48,20 @@
     color: #333333;
     text-transform: uppercase;
     margin: 30px 0 0 0;
+  }
+
+  .greeting__triangle {
+    display: none;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .greeting {
+    padding: 50px 0 30px 0;
+  }
+
+  .greeting__text {
+    font-size: 21px;
   }
 }

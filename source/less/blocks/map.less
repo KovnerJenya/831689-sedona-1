@@ -1,7 +1,23 @@
-.map__image {
+.map {
   position: relative;
+}
+
+.map__image {
   background-image: url("../img/bg-map-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 350px;
+}
+
+.map__marker {
+  left: 50%;
+  margin-left: -13px;
+  top: 50%;
+  position: absolute;
+}
+
+
+@media (min-width: @desktop-width) {
+  .map__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
