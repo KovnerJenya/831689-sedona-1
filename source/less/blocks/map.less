@@ -15,9 +15,38 @@
 }
 
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .map__image {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .map__image {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .map__image {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .map__image {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .map__image {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }

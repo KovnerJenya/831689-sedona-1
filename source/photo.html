@@ -31,7 +31,11 @@
       </nav>
       <header class="page-header">
         <a class="page-header__logo" href="#">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
+        </picture>
         </a>
         <button class="main-nav__menu" type="button">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewbox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -44,7 +48,11 @@
         </button>
       </header>
       <main class="page-main">
-        <div class="gallery-greeting"></div>
+        <div class="gallery-greeting">
+          <div>
+            <img class="intro-other" src="img/text-sedona.svg" width="462" height="350" alt="">
+          </div>
+        </div>
         <section class="gallery">
           <h1 class="gallery__title page-title">Фото и видео</h1>
           <p class="gallery__description">
@@ -54,7 +62,11 @@
           <div class="gallery__list">
             <div class="gallery__item gallery__item--1">
               <a href="#">
-                <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="">
+                </picture>
               </a>
               <div class="gallery__content">
                 <div class="gallery__info">
@@ -74,7 +86,11 @@
             </div>
             <div class="gallery__item gallery__item--2">
               <a href="#">
-                <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="">
+                </picture>
               </a>
               <div class="gallery__content">
                 <div class="gallery__info">
@@ -94,7 +110,11 @@
             </div>
             <div class="gallery__item gallery__item--3">
               <a href="#">
-                <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="">
+                </picture>
               </a>
               <div class="gallery__content">
                 <div class="gallery__info">
@@ -114,7 +134,11 @@
             </div>
             <div class="gallery__item gallery__item--4">
               <a href="#">
-                <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="">
+                </picture>
               </a>
               <div class="gallery__content">
                 <div class="gallery__info">
@@ -141,7 +165,11 @@
             они не подорожали в очередной раз!
           </p>
           <div class="presentation__video-wrapper">
-            <img class="video-image" src="img/video-mobile@1x.jpg" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
+            </picture>
             <div class="video__controls">
               <div class="video__controls--option">
                 <button class="option-button option-repeat">

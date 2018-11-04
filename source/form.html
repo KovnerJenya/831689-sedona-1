@@ -31,7 +31,11 @@
       </nav>
       <header class="page-header">
         <a class="page-header__logo" href="#">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта">
+        </picture>
         </a>
         <button class="main-nav__menu" type="button">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewbox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -44,7 +48,11 @@
         </button>
       </header>
       <main class="page-main">
-        <div class="form-greeting"></div>
+        <div class="form-greeting">
+          <div>
+            <img class="intro-other" src="img/text-sedona.svg" width="462" height="350" alt="">
+          </div>
+        </div>
         <section class="reviews">
           <h1 class="reviews-form__page-title">Оставьте свой отзыв</h1>
           <p class="reviews__description">
