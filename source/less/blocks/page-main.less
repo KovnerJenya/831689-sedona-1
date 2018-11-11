@@ -20,6 +20,7 @@
 .gallery-greeting {
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #2e4145;
   background-position: 50% 100%;
   height: 159px;
 
@@ -38,6 +39,7 @@
 .form-greeting {
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #2e4145;
   background-position: 50% 100%;
   height: 159px;
 
@@ -54,19 +56,19 @@
 }
 
 .intro-index {
-  width: 262px;
-  height: 214px;
+  width: 279px;
+  height: 216px;
   left: 50%;
-  top: 85px;
-  margin-left: -131px;
+  top: 90px;
+  margin-left: -139px;
   position: absolute;
 }
 
 .intro-other {
   width: 229px;
-  height: 39px;
+  height: 40px;
   left: 50%;
-  top: 55px;
+  top: 53px;
   margin-left: -115px;
   position: absolute;
 }
@@ -91,10 +93,6 @@
 
 
 @media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .greeting-image {
     position: relative;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -105,7 +103,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
       width: 100%;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -154,17 +152,17 @@
     width: 460px;
     height: 350px;
     left: 50%;
-    top: 80px;
+    top: 79px;
     margin-left: -230px;
     position: absolute;
   }
 
   .intro-other {
-    width: 458px;
-    height: 78px;
+    width: 459px;
+    height: 79px;
     left: 50%;
-    top: 95px;
-    margin-left: -229px;
+    top: 96px;
+    margin-left: -228px;
     position: absolute;
   }
 
@@ -209,6 +207,7 @@
 
   .gallery-greeting {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 302px;
 
     &::after {
       content: "";
@@ -224,6 +223,7 @@
 
   .form-greeting {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 302px;
 
     &::after {
       content: "";
@@ -240,6 +240,7 @@
   .intro-other {
     width: 461px;
     height: 80px;
+    top: 102px;
     margin-left: -230px;
   }
 
