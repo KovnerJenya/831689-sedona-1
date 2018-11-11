@@ -332,6 +332,8 @@
       border-left-style: solid;
       border-top: none;
       width: 49%;
+      box-sizing: border-box;
+      padding-left: 56px;
     }
 
     &--contacts {
@@ -340,7 +342,7 @@
     }
 
     &--landmarks {
-      margin-top: 39px;
+      margin-top: 42px;
     }
 
     &--textarea {
@@ -353,20 +355,25 @@
     padding: 0 55px;
 
     &--landmarks {
-      margin-bottom: 31px;
+      margin: 0 auto;
     }
 
     &--textarea {
-      margin-bottom: 40px;
+      margin: 0 auto;
     }
 
     &--info {
-      padding: 0 47px 36px 0;
+      padding: 0 0 36px 0;
+      text-align: end;
     }
 
     &--impression {
       margin-bottom: 43px;
       padding: 0;
+    }
+
+    &--contacts {
+      margin: 0 auto;
     }
   }
 
@@ -374,6 +381,7 @@
     width: 648px;
     height: 160px;
     padding: 15px 0 0 22px;
+    margin-top: 59px;
   }
 
   .reviews-form__list {
@@ -381,7 +389,7 @@
     padding: 0;
 
     &--info {
-      padding: 0 0 0 55px;
+      padding: 0;
     }
 
     &--contacts {
@@ -393,6 +401,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding: 0 97px;
+      margin-top: 33px;
     }
   }
 
@@ -457,28 +466,30 @@
 
   .reviews-form__textarea {
     width: 960px;
+    margin-top: 57px;
   }
 
   .reviews-form__item {
     display: flex;
+
+    &--info {
+      padding: 26px 0 0 0;
+    }
 
     &--landmarks {
       width: 21%;
     }
   }
 
-  .reviews-form__title--landmarks {
-    width: 270px;
-  }
-
   .reviews-form__list {
     &--info {
-      padding: 0 0 0 79px;
+      padding: 0;
     }
 
     &--landmarks {
       padding: 0;
       justify-content: space-between;
+      margin-top: 31px;
     }
 
     &--contacts {
@@ -489,13 +500,35 @@
     }
   }
 
+  .reviews-form__list--landmarks li:nth-child(2) {
+    margin-left: 18px;
+  }
+
+  .reviews-form__list--landmarks li:nth-child(3) {
+    margin-left: 16px;
+  }
+
   .reviews-form__title {
     &--info {
-      padding: 0 160px 36px 0;
+      padding: 0 0 36px 0;
+      text-align: end;
     }
 
     &--impression {
       margin-left: 81px;
+    }
+
+    &--landmarks {
+      width: 270px;
+      margin: 0 auto;
+    }
+
+    &--contacts {
+      margin: 0 auto;
+    }
+
+    &--textarea {
+      margin: 0 auto;
     }
   }
 
@@ -512,16 +545,17 @@
   }
 
   .reviews-form__group {
-    margin: 43px 0 13px 0;
+    margin: 44px 0 13px 0;
 
     &--info {
-      border-left-style: none;
-      border-top: none;
       width: 50%;
+      box-sizing: border-box;
+      padding-left: 79px;
+      border-left: 1px solid #e5e5e5;
     }
 
     &--landmarks {
-      margin-top: 24px;
+      margin-top: 26px;
       width: 100%;
     }
 
