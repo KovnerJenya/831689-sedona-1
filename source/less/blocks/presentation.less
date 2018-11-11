@@ -1,6 +1,7 @@
 .presentation {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 38px;
 }
 
 .video-image {
@@ -11,14 +12,14 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  margin: 30px 0 0 0;
+  margin: 34px 0 0 0;
 }
 
 .presentation__description {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
-  margin: 30px 0 30px 0;
+  margin: 27px 0 36px 0;
 }
 
 .video__controls {
@@ -46,6 +47,8 @@
 }
 
 .control-buttons {
+  fill: #5c6870;
+
   &:active {
     fill: #333333;
 
@@ -75,22 +78,24 @@
 }
 
 .option-subtitles {
-  margin-left: auto;
+  margin-left: 65px;
   text-align: end;
 }
 
+
 @media (min-width: @tablet-width) {
   .presentation {
-    padding: 65px 60px 0 60px;
+    padding: 0 60px 0 60px;
+    margin: 66px 0 41px 0;
   }
 
   .presentation__title {
     font-size: 30px;
-    margin: 0 0 35px 0;
+    margin: 0 0 32px 0;
   }
 
   .presentation__description {
-    margin: 0 0 80px 0;
+    margin: 0 0 72px 0;
   }
 
   .video__controls {
@@ -115,17 +120,21 @@
     }
   }
 
+  .option-subtitles {
+    margin-left: auto;
+  }
+
   .scale {
-    width: 360px;
+    width: 387px;
     position: absolute;
-    left: 20px;
+    left: -12px;
     top: 21px;
   }
 
   .bar {
     position: absolute;
-    top: 17px;
-    left: 117px;
+    top: 18px;
+    left: 100px;
   }
 
   .option-button {
@@ -133,6 +142,7 @@
   }
 
   .control-buttons {
+    margin: 3px 0 0 -9px;
     fill: rgba(255, 255, 255);
 
     &:hover {
@@ -151,6 +161,10 @@
 
 
 @media (min-width: @desktop-width) {
+  .presentation {
+    margin: 69px 0 89px 0;
+  }
+
   .video-image {
     width: 800px;
     height: 500px;
@@ -169,6 +183,6 @@
   }
 
   .bar {
-    left: 109px;
+    left: 103px;
   }
 }

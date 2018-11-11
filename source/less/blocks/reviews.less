@@ -10,6 +10,7 @@
 
 .reviews {
   text-align: center;
+  margin-bottom: 38px;
 }
 
 .reviews-form__required {
@@ -20,12 +21,44 @@
   margin: 25px 0 25px 0;
   padding: 0 20px;
   border-bottom: 1px solid #e5e5e5;
+
+  &--info {
+    margin: 21px 0 0 0;
+  }
+
+  &--contacts {
+    margin: 19px 0 0 0;
+    padding: 0 20px 28px 20px;
+  }
+
+  &--impression {
+    margin: 18px 0 0 0;
+    padding-bottom: 5px;
+  }
+
+  &--landmarks {
+    margin: 19px 0 0 0;
+    padding-bottom: 5px;
+  }
+
+  &--textarea {
+    margin: 18px 0 41px 0;
+    border: none;
+  }
 }
 
 .reviews-form__list {
   list-style: none;
   text-align: start;
   padding: 0;
+
+  &--info {
+    margin: 0 0 23px 0;
+  }
+
+  &--contacts {
+    margin: 4px 0 0 0;
+  }
 }
 
 .reviews-form__title {
@@ -40,7 +73,7 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 30px 0 30px 0;
+  margin: 38px 0 28px 0;
 }
 
 .reviews__description {
@@ -49,7 +82,7 @@
   text-transform: uppercase;
   color: #333333;
   border-bottom: 1px solid #e5e5e5;
-  padding: 0 0 30px 0;
+  padding: 0 0 14px 0;
 }
 
 .reviews-form__label {
@@ -78,17 +111,18 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  margin-left: 60px;
+  margin-left: 78px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -13px;
-    left: -60px;
-    width: 46px;
-    height: 46px;
+    top: -14px;
+    left: -65px;
+    width: 53px;
+    height: 53px;
     background-color: #f2f2f2;
     border-radius: 5px;
+    margin-left: -11px;
   }
 
   &:hover::before {
@@ -103,11 +137,12 @@
 .reviews-form__input-checkbox:checked + .reviews-form__label-checkbox::before {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -60px;
+  top: -14px;
+  left: -65px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: -11px;
 }
 
 .reviews-form__input-checkbox:checked + .reviews-form__label-checkbox:hover::before {
@@ -124,15 +159,15 @@
   line-height: 26px;
   font-weight: bold;
   position: relative;
-  margin-left: 60px;
+  margin-left: 78px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -13px;
-    left: -60px;
-    width: 46px;
-    height: 46px;
+    top: -14px;
+    left: -77px;
+    width: 53px;
+    height: 53px;
     background-color: #f2f2f2;
     border-radius: 50%;
   }
@@ -149,36 +184,45 @@
 .reviews-form__input-radio:checked + .reviews-form__label-radio::before {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -60px;
-  width: 20px;
-  height: 20px;
-  border: 13px solid #f2f2f2;
+  top: -14px;
+  left: -77px;
+  width: 21px;
+  height: 21px;
+  border: 17px solid #f2f2f2;
   background-color: #000000;
 }
 
 .reviews-form__input-radio:checked + .reviews-form__label-radio:hover::before {
-  border: 13px solid #e5e5e5;
+  border: 16px solid #e5e5e5;
 }
 
 .reviews-form__input-radio:checked + .reviews-form__label-radio:active::before {
-  border: 13px solid #d5d5d5;
+  border: 16px solid #d5d5d5;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .reviews-form__item {
-  padding: 17px 0 17px 0;
+  padding: 15px 0 0 0;
+
+  &--impression {
+    padding: 21px 0 22px 0;
+  }
+
+  &--landmarks {
+    margin-bottom: 38px;
+  }
 
   &--info {
     display: flex;
     align-items: center;
+    padding: 24px 0 0 0;
 
     & input {
       border: 4px solid transparent;
       background-color: #f2f2f2;
       padding: 16px;
       width: 100%;
-      margin-left: 10px;
+      margin-left: 16px;
     }
   }
 }
@@ -189,7 +233,7 @@
   position: relative;
 
   & label {
-    margin-left: 21px;
+    margin: 0 0 7px 22px;
   }
 
   & input {
@@ -197,7 +241,6 @@
     background-color: #f2f2f2;
     padding: 17px;
     width: 100%;
-    margin-left: 10px;
   }
 }
 
@@ -208,8 +251,9 @@
   background-color: #e6e6e6;
   position: absolute;
   right: 0;
-  top: 43px;
+  top: 48px;
   justify-content: center;
+  align-items: center;
 }
 
 .reviews-form__button {
@@ -237,13 +281,14 @@
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 14px 0 0 20px;
 }
 
 
 @media (min-width: @tablet-width) {
   .reviews {
-    padding: 65px 60px 65px 60px;
+    padding: 0 60px 0 60px;
+    margin: 76px 0 61px 0;
   }
 
   .reviews-form__page-title {
@@ -251,12 +296,12 @@
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 0 45px 0;
+    margin: 0 0 32px 0;
   }
 
   .reviews__description {
     border-style: none;
-    margin: 0 0 45px 0;
+    margin: 0 0 59px 0;
   }
 
   .reviews__form {
@@ -265,12 +310,7 @@
   }
 
   .reviews-form__item--contacts label {
-    margin: -5px 0 0 21px;
-  }
-
-  .reviews-form__title {
-    font-size: 21px;
-    padding: 0 55px;
+    margin: -5px 0 6px 21px;
   }
 
   .reviews-form__group {
@@ -289,22 +329,51 @@
     }
 
     &--info {
-      border-style: none;
-      width: 50%;
+      border-left-style: solid;
+      border-top: none;
+      width: 49%;
+    }
+
+    &--contacts {
+      margin-top: 57px;
+      width: 100%;
+    }
+
+    &--landmarks {
+      margin-top: 39px;
+    }
+
+    &--textarea {
+      margin-top: 45px;
     }
   }
 
-  .reviews-form__title--impression {
-    padding: 0 0 16px 0;
-  }
+  .reviews-form__title {
+    font-size: 21px;
+    padding: 0 55px;
 
-  .reviews-form__title--info {
-    padding-bottom: 47px;
+    &--landmarks {
+      margin-bottom: 31px;
+    }
+
+    &--textarea {
+      margin-bottom: 40px;
+    }
+
+    &--info {
+      padding: 0 47px 36px 0;
+    }
+
+    &--impression {
+      margin-bottom: 43px;
+      padding: 0;
+    }
   }
 
   .reviews-form__textarea {
     width: 648px;
     height: 160px;
+    padding: 15px 0 0 22px;
   }
 
   .reviews-form__list {
@@ -312,81 +381,64 @@
     padding: 0;
 
     &--info {
-      padding: 0 0 0 83px;
+      padding: 0 0 0 55px;
     }
 
     &--contacts {
       margin-top: 15px;
     }
-  }
 
-  .reviews-form__list--impression {
-    & .reviews-form__item {
-      padding: 62px 0 0 0;
+    &--landmarks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 97px;
     }
   }
 
-  .reviews-form__group--contacts {
-    margin-top: 75px;
-    width: 100%;
-  }
+  .reviews-form__item {
+    &--contacts {
+      padding: 15px 0 15px 0;
+    }
 
-  .reviews-form__group--landmarks {
-    margin-top: 35px;
-    width: 100%;
-  }
+    &--landmarks {
+      width: 43%;
+      padding: 25px 0;
+      margin-bottom: 12px;
+    }
 
-  .reviews-form__title--landmarks {
-    margin-bottom: 35px;
-  }
-
-  .reviews-form__list--landmarks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 110px;
-  }
-
-  .reviews-form__item--landmarks {
-    width: 50%;
-    padding: 25px 0;
-  }
-
-  .reviews-form__group--textarea {
-    margin-top: 45px;
-  }
-
-  .reviews-form__title--textarea {
-    margin-bottom: 60px;
+    &--impression {
+      padding: 27px 0;
+    }
   }
 
   .reviews-form__required {
     text-transform: uppercase;
     margin-left: auto;
     display: block;
-    margin-top: 80px;
-  }
-
-  .reviews-form__item--contacts {
-    & .reviews-form__input {
-      width: 100%;
-    }
+    margin-top: 73px;
+    font-size: 14px;
   }
 
   .reviews-form__button {
-    margin-top: 58px;
+    margin-top: 52px;
     width: 324px;
+    padding: 0 11px 0 0;
   }
 
   .reviews-form__icon {
-    top: 38px;
+    top: 42px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding: 65px 120px 65px 120px;
+    padding: 35px 120px 6px 120px;
+  }
+
+  .reviews__form__label {
+    margin-right: 12px;
   }
 
   .reviews__description {
@@ -400,6 +452,7 @@
 
   .reviews-form__button {
     width: 50%;
+    padding: 0;
   }
 
   .reviews-form__textarea {
@@ -410,12 +463,8 @@
     display: flex;
 
     &--landmarks {
-      width: 19%;
+      width: 21%;
     }
-  }
-
-  .reviews-form__list--info {
-    padding: 0 0 0 160px;
   }
 
   .reviews-form__title--landmarks {
@@ -423,6 +472,10 @@
   }
 
   .reviews-form__list {
+    &--info {
+      padding: 0 0 0 79px;
+    }
+
     &--landmarks {
       padding: 0;
       justify-content: space-between;
@@ -432,13 +485,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 55px;
+      margin-top: 61px;
     }
   }
 
   .reviews-form__title {
+    &--info {
+      padding: 0 160px 36px 0;
+    }
+
     &--impression {
-      margin-left: 59px;
+      margin-left: 81px;
     }
   }
 
@@ -446,23 +503,41 @@
     align-items: center;
 
     & label {
-      margin: 0;
+      margin: 0 18px 0 0;
     }
 
     & .reviews-form__input {
-      width: 248px;
+      width: 272px;
     }
   }
 
   .reviews-form__group {
-    margin-top: 50px;
+    margin: 43px 0 13px 0;
+
+    &--info {
+      border-left-style: none;
+      border-top: none;
+      width: 50%;
+    }
+
+    &--landmarks {
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    &--textarea {
+      margin: 34px 0 0 0;
+    }
   }
 
+  .reviews-form__label-radio {
+    margin-left: 80px;
+  }
 
   .reviews-form__icon {
     width: 55px;
     height: 55px;
-    top: 17px;
+    top: 15px;
   }
 
   .contact {

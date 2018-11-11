@@ -25,30 +25,8 @@
   padding: 0;
 }
 
-.main-nav__toggle {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 17px;
-  right: 17px;
-  border: none;
-  fill: #ffffff;
-  background-color: transparent;
-}
-
-.main-nav__menu {
-  margin: 0;
-  top: 17px;
-  position: absolute;
-  right: 17px;
-  padding: 0;
-  fill: #81b3d2;
-  border: none;
-  background-color: transparent;
-}
-
 .main-nav__item {
-  padding: 7px 0 7px 0;
+  padding: 7px 0 6px 0;
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
 }
@@ -73,6 +51,70 @@
     }
   }
 
+  .main-nav__toggle {
+    position: absolute;
+    bottom: -35px;
+    right: 19px;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 23px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    position: absolute;
+    top: 21px;
+    right: 19px;
+    width: 24px;
+    height: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -4px;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
   .main-nav__link {
     color: #ffffff;
 
@@ -84,6 +126,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav {
     width: 768px;
     background: #ffffff;
@@ -103,7 +149,7 @@
   }
 
   .main-nav__item {
-    padding: 15px 0 15px 0;
+    padding: 14px 0 14px 0;
     border-style: none;
     width: 20%;
   }
@@ -133,12 +179,17 @@
 
   .main-nav__list li:nth-child(3) {
     padding-left: 90px;
+    margin-left: -24px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 1200px;
+  }
+
+  .main-nav__list li:nth-child(3) {
+    margin-left: 65px;
   }
 
   .main-nav__link {

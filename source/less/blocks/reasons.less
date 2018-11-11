@@ -2,7 +2,7 @@
   list-style: none;
   text-align: center;
   margin: 0;
-  padding: 25px 0 30px 0;
+  padding: 0;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -11,12 +11,12 @@
 .reasons__content {
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0 20px 0;
+  padding: 24px 0 24px 0;
   background-color: #81b3d2;
   color: #ffffff;
 
   &--city {
-    padding: 55px 0 20px 0;
+    padding: 55px 0 27px 0;
   }
 }
 
@@ -27,9 +27,14 @@
 .reasons-main__canyon {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 23px;
 }
 
 .br {
+  display: none;
+}
+
+.br-dsk {
   display: none;
 }
 
@@ -37,12 +42,14 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin: 16px 0 0 0;
 
   &--addit {
     font-size: 18px;
     line-height: 26px;
     display: flex;
     align-items: flex-end;
+    margin: 0;
   }
 }
 
@@ -61,13 +68,23 @@
 .reasons__number {
   font-size: 14px;
   line-height: 21px;
+  margin: 9px 0;
 }
 
 .reasons__addit {
   text-align: left;
 
+  &--house {
+    margin-top: 20px;
+  }
+
+  &--souvenirs {
+    margin-top: 2px;
+  }
+
   &--food {
     order: 2;
+    margin-top: 4px;
   }
 }
 
@@ -80,11 +97,12 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 20px;
+  margin-top: -5px;
 }
 
 .reasons__item--info {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .reasons__info li:nth-child(3) {
@@ -101,7 +119,7 @@
 
 @media (min-width: @tablet-width) {
   .reasons {
-    margin-top: 20px;
+    margin-top: 28px;
   }
 
   .reasons-item__city {
@@ -114,12 +132,16 @@
   }
 
   .reasons__content {
-    width: 34%;
+    width: 33.33%;
     text-align: center;
-    padding: 35px 0 20px 0;
+    padding: 35px 0 0 0;
   }
 
   .reasons-picture {
+    display: block;
+  }
+
+  .br-dsk {
     display: block;
   }
 
@@ -128,7 +150,7 @@
   }
 
   .reasons__item--image {
-    width: 66%;
+    width: 66.66%;
     flex-shrink: 0;
   }
 
@@ -138,26 +160,49 @@
 
   .reasons__title {
     padding: 0 53px 0 53px;
+    margin-top: 10px;
+    font-size: 21px;
 
     &--addit {
-      font-size: 18px;
+      font-size: 21px;
       line-height: 26px;
       font-weight: bold;
       margin: 0;
-      padding: 20px 0 25px 0;
+      padding: 21px 0 21px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
+    &--canyon {
+      padding: 0;
+    }
+  }
+
+  .reasons__number {
+    margin-top: 10px;
   }
 
   .reasons__addit {
     text-align: center;
     width: 33%;
     padding: 0 25px;
+    margin-bottom: 10px;
 
     &--food {
       order: 0;
+      margin: 40px 17px 0 0;
+      padding: 0 28px 0 28px;
+    }
+
+    &--house {
+      margin-top: 40px;
+      padding: 0 23px;
+    }
+
+    &--souvenirs {
+      margin: 40px 7px 0 0;
+      padding: 0 19px 0 0;
     }
   }
 
@@ -166,7 +211,7 @@
     list-style: none;
     text-transform: uppercase;
     margin: 0;
-    padding: 25px 15px 25px 15px;
+    padding: 34px 0 29px 0;
     display: flex;
     flex-direction: row;
   }
@@ -177,8 +222,17 @@
     width: 33%;
   }
 
+  .reasons__info li:nth-child(2) {
+    margin-left: 2px;
+  }
+
+  .reasons__info li:nth-child(3) {
+    margin-left: 4px;
+  }
+
   .reasons__description {
-    padding: 0 42px;
+    padding: 0 43px;
+    margin-top: 21px;
 
     &--addit {
       font-size: 14px;
@@ -189,14 +243,22 @@
   }
 
   .reasons__icon {
-    width: 70px;
+    width: 75px;
     height: 72px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .reasons {
+    margin-top: 18px;
+  }
+
+  .reasons__content {
+    padding: 41px 0 0 0;
+  }
+
   .reasons-picture {
     display: block;
     height: 256px;
@@ -205,32 +267,52 @@
     object-position: center;
   }
 
+  .reasons__item {
+    &--info {
+      width: 33.33%;
+    }
+  }
+
   .reasons__title {
-    padding: 0 114px;
+    padding: 0 120px;
     font-size: 21px;
   }
 
   .reasons__list {
-    padding: 55px 0 74px;
+    margin: 59px 0 84px;
+  }
+
+  .reasons__info {
+    padding: 34px 0 50px 0;
+  }
+
+  .br-dsk {
+    display: block;
   }
 
   .reasons__addit {
     padding: 0;
+    width: 33.33%;
+    margin: 0;
   }
 
   .reasons__description {
-    padding: 26px 50px 0 50px;
+    padding: 22px 50px 0 50px;
+
+    &--city {
+      padding: 0 55px;
+    }
+
+    &--canyon {
+      padding: 0 83px;
+    }
+
+    &--info {
+      padding: 0 50px;
+    }
   }
 
   .reasons__icon {
     margin: 0 0 26px 0;
-  }
-
-  .reasons__description--city {
-    padding: 0 52px;
-  }
-
-  .reasons__description--canyon {
-    padding: 0 83px;
   }
 }
