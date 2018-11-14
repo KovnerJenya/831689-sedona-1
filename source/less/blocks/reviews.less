@@ -21,6 +21,9 @@
   margin: 25px 0 25px 0;
   padding: 0 20px;
   border-bottom: 1px solid #e5e5e5;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 
   &--info {
     margin: 21px 0 0 0;
@@ -327,7 +330,8 @@
     border-left-style: none;
     border-right-style: none;
     border-bottom-style: none;
-    border-color: #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+
 
     &--impression {
       order: -1;
@@ -337,7 +341,7 @@
     }
 
     &--info {
-      border-left-style: solid;
+      border-left: 1px solid #e5e5e5;
       border-top: none;
       width: 49%;
       box-sizing: border-box;
@@ -582,7 +586,7 @@
     top: 15px;
   }
 
-  .contact {
+  .reviews-form__contact {
     display: none;
   }
 }

@@ -1,0 +1,150 @@
+.video__image {
+  display: block;
+}
+
+.video__controls {
+  padding: 0 20px;
+  position: relative;
+}
+
+.video__range {
+  height: 45px;
+  position: absolute;
+  width: 280px;
+  top: -45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__option {
+  height: 66px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__button {
+  width: 66px;
+
+  &--subtitles {
+    margin-left: 65px;
+    text-align: end;
+  }
+}
+
+.video__svg {
+  fill: #5c6870;
+
+  &:active {
+    fill: #333333;
+
+    &:hover {
+      fill: #b8b8b8;
+    }
+  }
+}
+
+.video__scale {
+  width: 235px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 20px;
+  top: 21px;
+}
+
+.video__bar {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  left: 60px;
+}
+
+
+@media (min-width: @tablet-width) {
+.video__controls {
+  padding: 0;
+}
+
+.video__option {
+  height: 93px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__range {
+  height: 45px;
+  position: absolute;
+  top: 26%;
+  left: 106px;
+  background-color: transparent;
+}
+
+.video__scale {
+  width: 387px;
+  position: absolute;
+  left: -12px;
+  top: 21px;
+}
+
+.video__bar {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+}
+
+.video__button {
+  width: 93px;
+
+  &--subtitles {
+    margin-left: auto;
+  }
+}
+
+.video__svg {
+  margin: 3px 0 0 -9px;
+  fill: rgba(255, 255, 255);
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+.video {
+  position: relative;
+  padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.video__image {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+.video__option {
+  position: absolute;
+  width: 800px;
+  left: 13%;
+}
+
+.video__scale {
+  width: 540px;
+  left: -12px;
+}
+
+.video__bar {
+  left: 103px;
+}
+}

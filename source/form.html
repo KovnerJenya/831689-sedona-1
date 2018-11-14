@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <title>Главная</title>
 </head>
@@ -74,7 +75,7 @@
               <ul class="reviews-form__list reviews-form__list--contacts">
                 <li class="reviews-form__item reviews-form__item--contacts">
                   <label class="reviews-form__label" for="user-phone">
-                    <span class="contact">Контактный</span>
+                    <span class="reviews-form__contact">Контактный</span>
                     телефон*:</label>
                   <input class="reviews-form__input reviews-form__input--phone" id="user-phone" type="tel" name="userphone" placeholder="Введите телефон">
                   <div class="reviews-form__icon">
@@ -176,7 +177,6 @@
         <button class="popup__btn-ok blue-button">Ок</button>
       </div>
     </section>
-
     <section class="popup popup--success">
       <div class="popup__info">
         <h2 class="popup__title">Ваш отзыв отправлен!</h2>
