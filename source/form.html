@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <title>Главная</title>
 </head>
   <body>
@@ -50,7 +51,7 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="br">
             а также о посещенных вами достопримечательностях
           </p>
-          <form class="reviews__form reviews-form" action="http://echo.htmlacademy.ru" method="post">
+          <form class="reviews__form" action="http://echo.htmlacademy.ru" method="post">
             <fieldset class="reviews-form__group reviews-form__group--info">
               <legend class="reviews-form__title reviews-form__title--info">Представьтесь:</legend>
               <ul class="reviews-form__list reviews-form__list--info">
@@ -93,15 +94,15 @@
               <legend class="reviews-form__title reviews-form__title--impression">Ваше общее впечатление:</legend>
               <ul class="reviews-form__list reviews-form__list--impression">
                 <li class="reviews-form__item reviews-form__item--impression">
-                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="positive" checked="checked">
+                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" value="radio1" id="positive" checked="checked">
                   <label class="reviews-form__label-radio" for="positive">Скорее положительное</label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--impression">
-                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="negative">
+                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" value="radio2" id="negative">
                   <label class="reviews-form__label-radio" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--impression">
-                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" id="undefined">
+                  <input class="reviews-form__input-radio visually-hidden" type="radio" name="impression" value="radio3" id="undefined">
                   <label class="reviews-form__label-radio" for="undefined">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -111,47 +112,23 @@
                 достопримечательности:</legend>
               <ul class="reviews-form__list reviews-form__list--landmarks">
                 <li class="reviews-form__item reviews-form__item--landmarks">
-                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="bridge" checked="checked">
+                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks1" id="bridge" checked="checked">
                   <label class="reviews-form__label-checkbox" for="bridge">Мост Дьявола</label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--landmarks">
-                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="mountain" checked="checked">
+                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks2" id="mountain" checked="checked">
                   <label class="reviews-form__label-checkbox" for="mountain">Гора-Колокол</label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--landmarks">
-                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="park" checked="checked">
+                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks3" id="park" checked="checked">
                   <label class="reviews-form__label-checkbox " for="park">Слайд-парк</label>
                 </li>
                 <li class="reviews-form__item reviews-form__item--landmarks">
-                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks" id="rocks">
+                  <input class="reviews-form__input-checkbox visually-hidden" type="checkbox" name="landmarks4" id="rocks">
                   <label class="reviews-form__label-checkbox" for="rocks">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
-            <div class="failure-pop">
-              <b class="failure-title">
-                Что-то пошло<br class="br"> не так!
-              </b>
-              <p class="failure-description">
-                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-              </p>
-              <button class="failure-button blue-button">
-                Ок
-              </button>
-            </div>
-            <div class="success-pop">
-              <b class="success-title">
-                Ваш отзыв отправлен!
-              </b>
-              <p class="success-description">
-                Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-              </p>
-              <div class="bg-btn">
-              <button class="success-button blue-button">
-                Закрыть окно
-              </button>
-            </div>
-            </div>
             <fieldset class="reviews-form__group reviews-form__group--textarea">
               <legend class="reviews-form__title reviews-form__title--textarea">Опишите свои эмоции:</legend>
               <textarea class="reviews-form__textarea" style="" id="user-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -163,32 +140,54 @@
       </main>
       <footer class="page-footer">
         <a class="page-footer__hashtag" href="#">#Visitsedona</a>
-        <div class="page-footer__social social">
+        <div class="page-footer__social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__item--link" href="#" aria-label="Ссылка на наш Twitter">
+              <a class="social__link" href="#" aria-label="Ссылка на наш Twitter">
                 <svg width="17.5" height="14.663" ><use xlink:href="#icon-twitter"></use></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__item--link" href="#" aria-label="Ссылка на наш Facebook">
+              <a class="social__link" href="#" aria-label="Ссылка на наш Facebook">
                 <svg width="8.672" height="18.944" ><use xlink:href="#icon-facebook"></use></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__item--link" href="#" aria-label="Ссылка на наш Youtube">
+              <a class="social__link" href="#" aria-label="Ссылка на наш Youtube">
                 <svg width="19.979" height="14.015"  ><use xlink:href="#icon-youtube"></use></svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright">
           <a class="copyright__text" href="#">Разработано
             <svg width="26.943" height="34.09"  ><use xlink:href="#icon-logo-htmlacademy"></use></svg>
           </a>
         </div>
       </footer>
     </div>
+    <div class="popup-overlay"></div>
+    <section class="popup popup--failure">
+      <div class="popup__info">
+        <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      </div>
+      <div class="popup__btn">
+        <button class="popup__btn-ok blue-button">Ок</button>
+      </div>
+    </section>
+
+    <section class="popup popup--success">
+      <div class="popup__info">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup__btn popup__btn--success">
+        <button class="popup__btn-close blue-button">Закрыть окно</button>
+      </div>
+    </section>
+    <script src="js/picturefill.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

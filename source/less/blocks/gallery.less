@@ -49,6 +49,11 @@
 .gallery__button {
   font-weight: bold;
   margin-top: 5px;
+  font-size: 14px;
+}
+
+.gallery__info {
+  margin-bottom: 5px;
 }
 
 .gallery__svg {
@@ -58,10 +63,6 @@
 
 @media (min-width: @tablet-width) {
   .gallery {
-    padding: 0 60px 0 60px;
-  }
-
-  .presentation {
     padding: 0 60px 0 60px;
   }
 
@@ -113,7 +114,7 @@
     margin-top: 68px;
   }
 
-  .gallery__item--1 {
+  .gallery__item--main-photo {
     flex-grow: 1;
     width: 400px;
 
@@ -136,7 +137,7 @@
     position: relative;
     width: 33.33%;
 
-    &--1 {
+    &--main-photo {
       width: 1200px;
     }
   }
