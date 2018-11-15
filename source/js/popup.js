@@ -1,4 +1,4 @@
-var reviewsForm = document.querySelector(".reviews__form");
+var reviewsForm = document.querySelector(".reviews-form");
 var popupFailure = document.querySelector(".popup--failure");
 var popupSuccess = document.querySelector(".popup--success");
 var overlay = document.querySelector(".popup-overlay");

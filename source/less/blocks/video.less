@@ -1,3 +1,7 @@
+.video {
+  margin-bottom: 37px;
+}
+
 .video__image {
   display: block;
 }
@@ -64,87 +68,91 @@
 
 
 @media (min-width: @tablet-width) {
-.video__controls {
-  padding: 0;
-}
-
-.video__option {
-  height: 93px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.video__range {
-  height: 45px;
-  position: absolute;
-  top: 26%;
-  left: 106px;
-  background-color: transparent;
-}
-
-.video__scale {
-  width: 387px;
-  position: absolute;
-  left: -12px;
-  top: 21px;
-}
-
-.video__bar {
-  position: absolute;
-  top: 18px;
-  left: 100px;
-}
-
-.video__button {
-  width: 93px;
-
-  &--subtitles {
-    margin-left: auto;
+  .video__controls {
+    padding: 0;
   }
-}
 
-.video__svg {
-  margin: 3px 0 0 -9px;
-  fill: rgba(255, 255, 255);
+  .video__option {
+    height: 93px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video__range {
+    height: 45px;
+    position: absolute;
+    top: 26%;
+    left: 106px;
+    background-color: transparent;
+  }
+
+  .video__scale {
+    width: 387px;
+    position: absolute;
+    left: -12px;
+    top: 21px;
+  }
+
+  .video__bar {
+    position: absolute;
+    top: 18px;
+    left: 100px;
+  }
+
+  .video__button {
+    width: 93px;
+
+    &--subtitles {
+      margin-left: auto;
+    }
+  }
+
+  .video__svg {
+    margin: 3px 0 0 -9px;
+    fill: #ffffff;
 
     &:hover {
-      fill: rgba(255, 255, 255, 0.6);
+      opacity: 0.6;
     }
 
     &:active {
-      fill: rgba(255, 255, 255, 0.3);
+      opacity: 0.3;
     }
   }
 
-.video {
-  position: relative;
-  padding: 0 60px;
+  .video {
+    position: relative;
+    padding: 0 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
-.video__image {
-  width: 800px;
-  height: 500px;
-  margin: auto;
-}
+  .video {
+    margin-bottom: 85px;
+  }
 
-.video__option {
-  position: absolute;
-  width: 800px;
-  left: 13%;
-}
+  .video__image {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+  }
 
-.video__scale {
-  width: 540px;
-  left: -12px;
-}
+  .video__option {
+    position: absolute;
+    width: 800px;
+    left: 13%;
+  }
 
-.video__bar {
-  left: 103px;
-}
+  .video__scale {
+    width: 540px;
+    left: -12px;
+  }
+
+  .video__bar {
+    left: 103px;
+  }
 }
