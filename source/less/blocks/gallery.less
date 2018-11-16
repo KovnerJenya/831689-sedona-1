@@ -49,6 +49,11 @@
 .gallery__button {
   font-weight: bold;
   margin-top: 5px;
+  font-size: 14px;
+}
+
+.gallery__info {
+  margin-bottom: 5px;
 }
 
 .gallery__svg {
@@ -58,10 +63,6 @@
 
 @media (min-width: @tablet-width) {
   .gallery {
-    padding: 0 60px 0 60px;
-  }
-
-  .presentation {
     padding: 0 60px 0 60px;
   }
 
@@ -83,7 +84,7 @@
   }
 
   .gallery__content {
-    padding: 16px 20px 16px 20px;
+    padding: 14px 20px 14px 20px;
     display: flex;
     background-color: #f2f2f2;
   }
@@ -95,7 +96,7 @@
     font-weight: bold;
     width: 85px;
     text-align: justify;
-    margin-top: 0;
+    margin-top: 13px;
   }
 
   .gallery__svg {
@@ -113,7 +114,7 @@
     margin-top: 68px;
   }
 
-  .gallery__item--1 {
+  .gallery__item--main-photo {
     flex-grow: 1;
     width: 400px;
 
@@ -136,7 +137,7 @@
     position: relative;
     width: 33.33%;
 
-    &--1 {
+    &--main-photo {
       width: 1200px;
     }
   }
@@ -146,7 +147,7 @@
   }
 
   .gallery__content {
-    padding: 16px 0 16px 0;
+    padding: 14px 0 14px 0;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     width: 100%;
