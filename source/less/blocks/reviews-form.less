@@ -141,6 +141,10 @@
   background-color: #a1a1a1;
 }
 
+.reviews-form__input-checkbox:focus + .reviews-form__label-checkbox {
+  outline: 2px dotted #333333;
+}
+
 .reviews-form__label-radio {
   font-size: 18px;
   line-height: 26px;
@@ -186,6 +190,10 @@
 .reviews-form__input-radio:checked + .reviews-form__label-radio:active::before {
   border: 16px solid #d5d5d5;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.reviews-form__input-radio:focus + .reviews-form__label-radio {
+  outline: 2px dotted #333333;
 }
 
 .reviews-form__item {
